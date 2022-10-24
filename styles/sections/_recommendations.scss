@@ -1,0 +1,356 @@
+/* ==== 
+ --------- (5.3) recommendations section styles start ---------
+ ==== */
+
+.rec {
+    padding: 140px 16px 160px;
+    background-color: #F7FAFE;
+    position: relative;
+    z-index: 1;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 140px;
+    }
+
+    .rec__row {
+        max-width: 1140px;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        gap: 94px;
+    }
+
+    .rec__video {
+        // background-color: $white;
+        // border-radius: 10px;
+        // box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+        max-width: 570px;
+        // padding: 10px 0px 10px 0px;
+
+        video {
+            border-radius: 16px;
+            max-width: 570px;
+            height: auto;
+        }
+    }
+
+    .rec__content {
+        p {
+            line-height: 44px;
+        }
+    }
+
+    .atom {
+        position: absolute;
+        top: -40px;
+        left: 0px;
+        z-index: -1;
+    }
+}
+
+
+// suggested universities section styles start
+
+.suggested,
+.viewed {
+    overflow-x: clip;
+
+    .container {
+        padding-right: 0px;
+    }
+}
+
+
+.universities__head,
+.viewed__head {
+    h2 {
+        font-weight: 700;
+    }
+}
+
+.universities__buttons__inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: $transition;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.universities__items {
+    margin-bottom: -20px;
+    margin-left: -10px;
+
+    .swiper-slide {
+        width: 335px !important;
+        padding-bottom: 20px;
+        // padding-left: 10px;
+    }
+
+    .swiper {
+        padding-left: 10px;
+        // margin-left: -10px;
+    }
+}
+
+.universities__item {
+    width: 330px;
+    background-color: $white;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.universities__item__thumb {
+    a {
+        position: relative;
+        width: 100%;
+        height: 180px;
+        max-height: 200px;
+
+        img {
+            border-radius: 12px;
+        }
+    }
+}
+
+.universities__item__content {
+    h3 {
+        overflow: hidden;
+        text-overflow: "...";
+        white-space: nowrap;
+        font-size: 17px;
+        line-height: 28px;
+        margin-top: -6px;
+        font-weight: 600;
+        color: #02547d;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        color: #9e9e9e;
+        font-weight: 400;
+    }
+}
+
+.universities__item__content-wrapper {
+    padding: 16px 12px;
+}
+
+.universities__item__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    p {
+        margin: 0px;
+        font-size: 15px;
+        line-height: 25px;
+        color: #9e9e9e;
+        font-weight: 400;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        svg {
+            color: #9e9e9e;
+        }
+    }
+
+    .tag,
+    .private {
+        background: #bbe0ff;
+        border-radius: 4px;
+        padding: 2px 8px;
+
+        p {
+            font-family: $theme-font;
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
+            color: #1B6BAC;
+        }
+    }
+
+    .private {
+        background-color: #D6DFFF;
+
+        p {
+            color: #3359DF;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .rec {
+        padding: 70px 16px 60px;
+
+        h2 {
+            font-size: 34px;
+            line-height: 46px;
+            margin-bottom: 90px;
+        }
+
+        .rec__row {
+            max-width: 780px;
+            gap: 30px;
+        }
+
+        .rec__video {
+            border-radius: 8px;
+            max-width: 400px;
+
+            video {
+                max-width: 365px;
+                border-radius: 8px;
+            }
+        }
+
+        .rec__content {
+            max-width: 400px;
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+
+        .atom {
+            width: 220px;
+            height: 260px;
+            top: -20px;
+        }
+    }
+
+    .universities__items {
+        .swiper-slide {
+            width: 300px !important;
+        }
+    }
+
+
+    .universities__item {
+        width: 300px;
+    }
+
+    .universities__item__thumb {
+        a {
+            img {
+                max-width: unset;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+ .rec {
+     padding: 70px 0px 60px 16px;
+     .rec__row {
+         display: block;
+         max-width: 100%;
+     }
+
+     .rec__video {
+         max-width: 100%;
+     }
+
+     .rec__content {
+         max-width: 420px;
+         margin: 20px auto 0px;
+         text-align: center;
+         padding-right: 16px;
+         p {
+             text-align: center;
+         }
+     }
+ }
+}
+
+@media only screen and (max-width: 760px) {
+    .rec {
+        padding: 40px 0px 40px 16px;
+
+        h2 {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+
+        .rec__row {
+            max-width: 100%;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .rec__video {
+            video {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+            }
+        }
+
+        .rec__content {
+            p {
+                font-size: 13px;
+                line-height: 18px;
+                text-align: center;
+            }
+        }
+
+        .atom {
+            width: 100px;
+            height: 110px;
+            top: -10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 424px) {
+    .universities__items {
+        .swiper-slide {
+            width: 260px !important;
+        }
+    }
+
+
+    .universities__item {
+        width: 260px;
+    }
+
+    .rec .rec__video {
+        max-width: 100% !important;
+        border-radius: 8px 0px 0px 8px;
+        // margin-left: auto;
+    }
+
+    .universities__item__content {
+        h3 {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .universities__item__info {
+            margin-top: 5px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* ==== 
+ --------- (5.3) recommendations section styles end ---------
+ ==== */

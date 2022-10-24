@@ -1,0 +1,33 @@
+// (1.2) variables
+
+// open sans and yeseva one google fonts source
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Yeseva+One&display=swap');
+
+// font family
+$openSans: 'Open Sans', sans-serif;
+$yesevaOne: 'Yeseva One', cursive;
+
+// theme default
+$theme-font: $openSans;
+$theme-bg: #ffffff;
+$theme-color: #354455;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$primary-color: #02547D;
+$secondary-color: #494E54;
+$tertiary-color: #35445570;
+
+// gradient
+$gradient: linear-gradient(0deg, #ff975b 0%, #ff0000 100%);
+
+
+// transitions
+$transition: all 0.2s ease-out;
+
+// box shadow
+$shadow: 0px 4px 14px rgba(0, 0, 0, 0.12), inset -2px -3px 12px rgba(38, 38, 38, 0.25), inset 2px 3px 12px rgba(255, 255, 255, 0.25);
+$secondary-shadow: 0px 7px 16px 2px rgba(0, 0, 0, 0.15);
+
+// radial-gradient(214.1% 1319.55% at 133.4% -84.77%, #E7FBFF 6.38%, #FFFFFF 52.2%, #F4FBFF 80.49%, #D7F0FF 100%)

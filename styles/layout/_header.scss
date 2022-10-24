@@ -1,0 +1,45 @@
+/* ==== 
+ --------- (4.1) header styles start ---------
+ ==== */
+
+.header {
+    padding: 15px 145px;
+    background-color: $white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 9;
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .header__logo {
+        font-family: $yesevaOne;
+        font-size: 32px;
+        line-height: 37px;
+        font-weight: 400;
+        color: $primary-color;
+    }
+
+
+    .header__list {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+    }
+
+
+
+}
+
+/* ==== 
+ --------- (4.1) header styles end ---------
+ ==== */

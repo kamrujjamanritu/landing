@@ -1,0 +1,40 @@
+/* ==== 
+ --------- (4.2) footer styles start ---------
+ ==== */
+
+footer {
+    padding: 46px 16px;
+    text-align: center;
+    background-color: #354455;
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $white;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    footer {
+        padding: 36px 16px;
+        p {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    footer {
+        padding: 32px 16px;
+        p {
+            font-size: 10px;
+            line-height: 14px;
+        }
+    }
+}
+
+/* ==== 
+ --------- (4.2) footer styles end ---------
+ ==== */

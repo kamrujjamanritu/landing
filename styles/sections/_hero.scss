@@ -1,0 +1,140 @@
+/* ==== 
+ --------- (5.1) hero section styles start ---------
+ ==== */
+
+.hero {
+    padding: 134px 0px 180px;
+    background-color: rgb(231, 251, 255);
+    background: url("../../public/assets/images/globe.png"), url("../../public/assets/images/world-map.png"), linear-gradient(53deg, rgba(231, 251, 255, 1) 0%, rgba(255, 255, 255, 1) 47%, rgba(244, 251, 255, 1) 87%, rgba(215, 240, 255, 1) 100%);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, 100%;
+    background-position: left bottom, right center, left top;
+
+    .hero__container {
+        text-align: center;
+
+        h1 {
+            max-width: 1020px;
+            margin: 0px auto 40px;
+            font-weight: 800;
+        }
+
+        p {
+            max-width: 720px;
+            margin: 0px auto 84px;
+            color: $secondary-color;
+
+            a {
+                font-weight: 700;
+                color: $primary-color;
+            }
+        }
+
+        .hero__cta {
+            color: $white;
+            font-weight: 600;
+            padding: 14px 40px;
+            background-color: $primary-color;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12), inset -2px -3px 12px rgba(38, 38, 38, 0.25), inset 2px 3px 12px rgba(255, 255, 255, 0.25);
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: none;
+
+            &:hover,
+            &:focus,
+            &:active {
+                box-shadow: none !important;
+                border-radius: 40px;
+                background-color: $primary-color;
+                background-image: none !important;
+                outline: none !important;
+            }
+        }
+    }
+}
+
+:focus:not(:focus-visible) {
+    outline: 0;
+    box-shadow: none;
+}
+
+/**
+   * Cross-browser styles for explicit focus via 
+   * keyboard-based (eg Tab) navigation or the
+   * .focus-visible utility class.
+   */
+:focus,
+.focus-visible:focus:not(:focus-visible) {
+    outline: 0;
+    box-shadow:
+        0 0 0 .2rem #fff,
+        0 0 0 .35rem #069;
+}
+
+@media only screen and (max-width: 1399px) {
+    .hero {
+        padding: 70px 0px 130px;
+        background-size: 288px 270px, contain, 100%;
+
+        .hero__container {
+            h1 {
+                font-size: 40px;
+                line-height: 54px;
+                max-width: 740px;
+                margin-bottom: 22px;
+            }
+
+            p {
+                max-width: 525px;
+                margin-bottom: 60px;
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .hero__cta {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .hero {
+        padding: 40px 16px 50px;
+        background-size: 188px 170px, contain, 100%;
+
+        .hero__container {
+            h1 {
+                font-size: 20px;
+                line-height: 27px;
+                max-width: 360px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                max-width: 240px;
+                margin-bottom: 30px;
+                font-size: 13px;
+                line-height: 22px;
+            }
+
+            .hero__cta {
+                font-size: 10px;
+                line-height: 14px;
+                padding: 10px 24px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .hero {
+        background-size: 125px 110px, contain, 100%;
+    }
+}
+
+/* ==== 
+ --------- (5.1) hero section styles end ---------
+ ==== */

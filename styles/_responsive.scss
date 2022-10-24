@@ -1,0 +1,156 @@
+/* ==== 
+ --------- (6.0) responsive styles start ---------
+ ==== */
+
+
+@media only screen and (max-width: 991px) {
+
+  // paragraph styles
+  .primary-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  // link styles
+  a,
+  button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  // heading styles
+  h1,
+  .hero-title {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  h2,
+  .section-title {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+
+  // buttons
+  .cmn-button {
+    padding: 10px 32px;
+  }
+
+  // header
+  .header {
+    padding: 20px 40px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  // paragraph styles
+  p,
+  th,
+  td,
+  li,
+  input,
+  textarea,
+  select,
+  label,
+  blockquote,
+  span {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .primary-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  // heading styles
+  h1,
+  .hero-title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  h2,
+  .section-title {
+    font-size: 43px;
+    line-height: 55px;
+  }
+
+}
+
+@media only screen and (max-width: 575px) {
+
+  // paragraph styles
+  p,
+  th,
+  td,
+  li,
+  input,
+  textarea,
+  select,
+  label,
+  blockquote,
+  span {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .primary-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  // link styles
+  a,
+  button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  // heading styles
+  h1,
+  .hero-title {
+    font-size: 57px;
+    line-height: 74px;
+  }
+
+  h2,
+  .section-title {
+    font-size: 43px;
+    line-height: 55px;
+  }
+
+  // global 
+  .main {
+    margin-top: 64px;
+  }
+
+  // buttons
+  .cmn-button {
+    padding: 8px 24px;
+  }
+
+
+  // header 
+  .header {
+    padding: 16px;
+
+    .header__logo {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .header__list {
+      gap: 18px;
+    }
+  }
+
+}
+
+
+/* ==== 
+ --------- (6.0) responsive styles end ---------
+ ==== */

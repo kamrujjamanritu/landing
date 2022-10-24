@@ -1,0 +1,119 @@
+/* ==== 
+ --------- (3.2) modal styles start ---------
+ ==== */
+
+.modal {
+
+    .modal__container {
+        max-width: 744px;
+        width: 744px;
+        margin: 0px auto;
+        padding: 50px 16px;
+        background: #FFFFFF;
+        box-shadow: 0px 7px 16px 2px rgba(0, 0, 0, 0.15);
+        position: fixed;
+        top: 0%;
+        left: 50%;
+        z-index: 9999;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(-50%, -40px);
+        transition: all 0.3s ease-in;
+
+        p {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: #354455;
+            max-width: 476px;
+            margin: 30px auto 0px;
+        }
+
+        .close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            @include box(32px);
+            background: #FFFFFF;
+            box-shadow: 2px 4px 12px 4px rgba(101, 110, 132, 0.18);
+            border-radius: 4px;
+
+            svg {
+                font-size: 20px;
+                color: #02547D;
+            }
+        }
+    }
+
+    .modal__active {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .modal {
+        .modal__container {
+            max-width: 677px;
+            width: 677px;
+            padding: 40px 16px;
+
+            img {
+                max-width: 320px;
+            }
+
+            p {
+                font-size: 18px;
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .modal {
+        .modal__container {
+            max-width: 310px;
+            width: 310px;
+            padding: 24px 16px;
+
+            img {
+                max-width: 155px;
+            }
+
+            p {
+                font-size: 10px;
+                line-height: 16px;
+                max-width: 240px;
+                margin-top: 16px;
+            }
+
+            .close {
+                @include box(24px);
+                border-radius: 4px;
+                top: 16px;
+                top: 16px;
+
+                svg {
+                    font-size: 14px;
+                    color: #02547D;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .modal {
+        .modal__container {
+            max-width: 290px;
+        }
+    }
+}
+
+/* ==== 
+ --------- (3.2) modal styles end ---------
+ ==== */

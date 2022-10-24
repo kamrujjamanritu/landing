@@ -1,0 +1,71 @@
+/* ==== 
+ --------- (2.3) global styles start ---------
+ ==== */
+
+.p-120 {
+  padding: 120px 0px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.mt-60 {
+  margin-bottom: 60px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.row-margin {
+  margin-bottom: -30px;
+
+  .col-margin {
+    margin-bottom: 30px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0px;
+  outline: 0px;
+}
+
+.unset {
+  max-width: unset;
+}
+
+.bg-img {
+  @include background($theme-color, no-repeat, cover, center center);
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+.slick-slide {
+  margin: 0px 12px;
+
+  img {
+    display: inline-block;
+  }
+}
+
+.slick-list {
+  margin: 0px -12px;
+}
+
+
+.main {
+  margin-top: 80px;
+}
+
+/* ==== 
+ --------- (2.3) global styles end ---------
+ ==== */

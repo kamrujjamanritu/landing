@@ -1,0 +1,196 @@
+/* ==== 
+ --------- (5.4) contact section styles start ---------
+ ==== */
+
+.contact {
+    padding: 80px 16px;
+    background-color: #04567E;
+
+    .contact__container {
+        max-width: 1250px;
+        margin: 0px auto;
+        display: flex;
+        align-items: flex-start;
+        gap: 65px;
+    }
+
+    .contact__head {
+        max-width: 415px;
+
+        h2 {
+            color: $white;
+        }
+    }
+
+    .contact__info {
+        display: flex;
+        align-items: center;
+        gap: 120px;
+
+        p {
+            font-size: 18px;
+            line-height: 25px;
+            color: $white;
+            margin-bottom: 24px;
+            font-weight: 400;
+
+            &:nth-last-of-type(1) {
+                margin-bottom: 0px;
+            }
+        }
+
+        a {
+            min-width: 200px;
+            border: 1px solid #FFFFFF;
+            border-radius: 40px;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 20px;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 600;
+            color: $white;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: -60px;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 90px;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .contact {
+        padding: 60px 16px;
+        .contact__container {
+            gap: 15px;
+            max-width: 800px;
+
+            .contact__head {
+                max-width: 300px;
+            }
+
+            h2 {
+                font-size: 28px;
+                line-height: 42px;
+            }
+        }
+
+        .contact__info {
+            gap: 50px;
+
+            p {
+                font-size: 12px;
+                line-height: 16px;
+                max-width: 260px;
+            }
+            a {
+                min-width: 160px;
+                font-size: 14px;
+                line-height: 18px;
+                &::before {
+                    left: -25px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contact {
+        padding: 30px 16px;
+        .contact__container {
+            gap: 24px;
+            width: 100%;
+
+            .contact__head {
+                max-width: 100%;
+                min-width: 200px;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        .contact__info {
+            gap: 50px;
+
+            p {
+                font-size: 12px;
+                line-height: 16px;
+                max-width: 100%;
+                margin-bottom: 12px;
+            }
+            a {
+                min-width: 120px;
+                font-size: 10px;
+                line-height: 12px;
+                padding: 9px 24px;
+                &::before {
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .contact {
+        padding: 30px 80px;
+        .contact__container {
+            gap: 24px;
+            width: 100%;
+            flex-direction: column;
+            .contact__head {
+                max-width: 200px;
+            }
+
+            h2 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        .contact__info {
+            gap: 30px;
+            flex-direction: column;
+            align-items: flex-start;
+            p {
+                font-size: 11px;
+                line-height: 16px;
+                max-width: 100%;
+                margin-bottom: 12px;
+            }
+            a {
+                min-width: 120px;
+                font-size: 10px;
+                line-height: 12px;
+                padding: 9px 24px;
+                &::before {
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .contact {
+        padding: 30px 16px;
+    }
+}
+/* ==== 
+ --------- (5.4) contact section styles end ---------
+ ==== */

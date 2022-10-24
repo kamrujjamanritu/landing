@@ -1,0 +1,65 @@
+/* ==============
+ ========= css documentation =========
+
+ * theme name: migonest
+ * version: 1.0
+ * description: Migonest Global University Admission Guideline
+ * author: Mohammad Wahedul Haque
+
+ 01. abstracts
+     1.1 --> mixins
+     1.2 --> variables
+    
+ 02. base
+     2.1 --> reset
+     2.2 --> typography
+     2.3 --> global
+
+ 03. components
+     3.1 --> buttons
+     3.2 --> modal
+
+ 04. layout
+     4.1 --> header
+     4.2 --> footer
+
+ 05. sections
+     5.1 --> hero
+     5.2 --> search
+     5.3 --> recommendations
+     5.4 --> contact
+     5.5 --> 
+     5.6 --> 
+
+ 06. responsive
+
+     =================================
+============== */
+
+// abstract styles
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base styles
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/global";
+
+// component styles
+@import "./components/buttons";
+@import "./components/modal";
+
+// layout styles
+@import "./layout/header";
+@import "./layout/footer";
+
+// section styles
+@import "./sections/hero";
+@import "./sections/search";
+@import "./sections/recommendations";
+@import "./sections/contact";
+
+
+
+// responsive styles
+@import "./responsive";
